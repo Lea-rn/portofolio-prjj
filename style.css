@@ -69,48 +69,184 @@ body {
   color: black;
 }
 
+/* /// services /// */
 
 .services {
-  
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 150px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .card {
- box-shadow: 1px 1px 20px black;
- border-radius: 10px;
-    width: 30%;
-    height: 250px;
-    margin: 0px 20px;
-    padding: 0px 10px;
-    transition: 1s;
+  box-shadow: 1px 1px 20px black;
+  border-radius: 10px;
+  width: 30%;
+  height: 250px;
+  margin: 0px 20px;
+  padding: 0px 10px;
+  transition: 1s;
 }
 
 .card:hover {
-    transform: scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
 }
 
-
 .logo {
-    text-align: center;
-    font-size: 100px;
+  text-align: center;
+  font-size: 100px;
+  transition: 1s;
+}
+
+.card:hover .logo {
+  transform: rotate(360deg);
 }
 
 .service-info {
-   
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .service-info p {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .service-info div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-container a:hover {
+  color: red;
+}
+
+.title {
+  text-align: center;
+  font-size: 90px;
+  text-transform: uppercase;
+}
+
+/* /////// project --- section --- */
+
+.project-card {
+  box-shadow: 1px 1px 20px black;
+  width: 20%;
+  margin: 20px;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info {
+  padding: 0px 8px;
+}
+
+/* ////// contact */
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-card {
+  width: 30%;
+  height: 260px;
+  margin: 10px 30px;
+  text-align: center;
+  box-shadow: 1px 1px 20px black;
+}
+
+.contact-card .logo {
+  margin-bottom: 50px;
+}
+
+.contact-card p {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* ///// footer //////////// */
+footer {
+  background-color: #eaf292;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.social-media-container-footer a {
+  color: black;
+  margin: 0px 20px;
+}
+/* ////// body 100% ===> main 100% ==> projects 100% ===> projects-card 100% /// */
+
+@media (max-width: 460px) {
+  /* //// navbar ////  */
+
+  .links-container a {
+    font-size: 13px;
+  }
+
+  /* /////// cover photo /// */
+
+  .cover {
+    padding: 20px;
+  }
+
+  .cover h2 {
+    font-size: 20px;
+  }
+
+  .cover button {
+    padding: 10px 20px;
+
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+  
+
+  
+.services {
+  
+    height: 1000px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 180px;
     align-items: center;
+
+    flex-wrap: wrap;
+   
+}
+
+.card {
+  box-shadow: 1px 1px 20px black;
+  border-radius: 10px;
+  width: 70%;
+  height: 250px;
+  margin: 20px 0px;
+  padding: 0px 10px;
+  transition: 1s;
+}
 }

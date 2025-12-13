@@ -62,11 +62,11 @@ body {
 .social-media-container a {
   font-size: 30px;
   margin-right: 20px;
-  color: white;
+  color: rgb(30, 29, 29);
 }
 
 .social-media-container a:hover {
-  color: black;
+  color: rgb(155, 24, 24);
 }
 
 /* /// services /// */
@@ -195,6 +195,7 @@ footer {
 .social-media-container-footer a {
   color: black;
   margin: 0px 20px;
+    font-size: 30px;
 }
 /* ////// body 100% ===> main 100% ==> projects 100% ===> projects-card 100% /// */
 
@@ -202,7 +203,7 @@ footer {
   /* //// navbar ////  */
 
   .links-container a {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   /* /////// cover photo /// */
@@ -249,4 +250,47 @@ footer {
   padding: 0px 10px;
   transition: 1s;
 }
+
+.projects {
+ 
+  flex-direction: column;
+  align-items: center;
 }
+
+.project-card {
+  
+  width: 80%;
+
+}
+
+.contact {
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card {
+  width: 80%;
+
+}
+
+
+.social-media-container-footer a {
+  color: black;
+  margin: 8px;
+  font-size: 15px;
+ 
+}
+footer h3 {
+  font-size: 12px;
+}
+
+.social-media-container a {
+  font-size: 25px;
+  margin-right: 20px;
+  color: rgb(30, 29, 29);
+}
+}
+
+
+
